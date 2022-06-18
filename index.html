@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Title</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <nav class="flex align-middle bg-[#33A0D9] w-[1440px] h-[104px]">
+    <img src="logo.png" alt=".." class=" mt-[21px] mb-[13px] ml-[100px] w-[185px] h-[70px]">
+    <ul class="flex align-middle">
+      <li class="mt-[36px] mb-[36px] ml-[494px] font-bold w-[164px] h-[32px]">Join a Race</li>
+      <li class="mt-[36px] mb-[36px] ml-[76px] font-bold w-[160px] h-[32px]">Leaderboard</li>
+      <li class="mt-[36px] mb-[36px] ml-[76px] cursor-pointer font-bold w-[144px] h-[32px]"><button
+          class="bg-white py-0.5 px-2 rounded">Login</button></li>
+    </ul>
+  </nav>
+  <main
+    class="bg-[url('back.png')] h-[910px] w-[1440px] flex flex-col bg-[#E5E5E5] bg-bottom bg-no-repeat bg-[length:1440px_505px]">
+    <section class="ml-[483px] mt-[183px]" id = "section1">
+      <h1 class="text-[48px] font-bold mb-[30px]">Password Reset</h1>
+      <h3 class="font-semibold text-[24px] mb-[17px]">New Password</h3>
+      <input type="password" class="border border-black w-[417px] h-[45px] mb-[58px]" id = "input1">
+      <h3 class="font-semibold text-[24px] mb-[17px]">Re-enter New Password</h3>
+      <input type="password" class="border border-black w-[417px] h-[45px]" id = "input2">
+      <br>
+      <span id="showerror" class="text-red-600"></span>
+      <br>
+      <button class="bg-black text-white w-[441px] h-[68px] mt-[80px] rounded text-[24px]" onclick="passwordcheck()">Reset Password</button>
+    </section>
+    <section class="ml-[483px] mt-[183px] hidden" id = "section2">
+      <h1 class="text-[48px] font-bold mb-[23px]">Password Changed</h1>
+      <p class="text-[24px] mb-[45px] w-[543px]">Your password has been updated! Now get back
+        in the driver seat, racers are waiting for you!</p>
+      <button class="bg-black text-white w-[441px] h-[68px] rounded text-[24px]">Join A Race</button>
+    </section>
+  </main>
+  <footer class="bg-[#33A0D9] w-[1440px] h-[138px]">
+    <ul class="flex ml-[237.5px]">
+      <li class="text-white font-semibold mt-[51px] mb-[51px] mr-[49px]">About us</li>
+      <li class="text-white font-semibold mt-[51px] mb-[51px] mr-[49px]">Privacy Policy</li>
+      <li class="text-white font-semibold mt-[51px] mb-[51px] mr-[49px]">Tutorials</li>
+      <li class="text-white font-semibold mt-[51px] mb-[51px] mr-[49px]">Term of Services</li>
+    </ul>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
